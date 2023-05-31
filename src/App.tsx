@@ -3,10 +3,10 @@ import Navigation from "./components/Navigation";
 
 function App() {
   return (
-    <header className="px-6 md:px-16 bg-[#F8F9FA] mb-10">
+    <header className="px-6 md:px-16 pt-24 bg-[#F8F9FA] mb-10">
       <Navigation />
       <Header />
-      <div className="mx-auto rounded-xl w-[90%] lg:w-[80%] -mt-12 bg-white py-3 px-2 md:py-10 md:px-8 flex items-center justify-between" style={boxStyle}>
+      <div className="mx-auto rounded-xl w-[95%] lg:w-[80%] -mt-12 bg-white py-3 px-2 md:py-10 md:px-8 flex items-center justify-between" style={boxStyle}>
         <div className="flex items-center">
           <div className="flex items-center justify-center flex-col md:flex-row md:mr-2 lg:mr-5">
             <h1 className="text-[#03012C] text-sm md:text-2xl font-semibold md:mr-2 lg:mr-3">2943</h1>

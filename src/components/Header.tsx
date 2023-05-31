@@ -17,7 +17,7 @@ const Header = () => {
             className="w-full bg-white rounded-lg h-12 placeholder:text-[#18181B] focus:outline-[#084116] focus:border-[#084116] pl-2 md:pl-4 font-light placeholder:text-sm"
             placeholder="Input keyword"
           />
-          <button className="rounded-lg text-white text-xs md:text-base text-center px-2 md:px-0 md:w-24 h-10 absolute right-1 top-1 bg-[#03012C]">
+          <button className="rounded-lg text-white text-sm md:text-base text-center px-2 md:px-0 w-24 h-10 absolute right-1 top-1 bg-[#03012C]">
             Search
           </button>
         </div>
