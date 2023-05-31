@@ -1,27 +1,12 @@
-import { useState } from 'react';
-// import './App.css'
+import Header from "./components/Header"
+import Navigation from "./components/Navigation"
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-        </a>
-      </div>
-      <h1 className='font-sans text-red-300 font-semibold'>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p className='text-2xl'>
-          Edit and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Navigation />
+      <Header />
     </>
   )
 }
