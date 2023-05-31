@@ -11,7 +11,7 @@ const Header = () => {
         <h3 className="text-white font-light text-sm md:text-xl my-4 md:w-[85%] md:mx-auto text-center">
           Track and manage contracts files of the federal government of Nigeria
         </h3>
-        <div className="relative md:w-[55%] md:mx-auto  mt-10 md:mt-0 md:mb-6">
+        <div className="relative md:w-[65%] md:mx-auto  mt-10 md:mt-0 md:mb-6">
           <input
             type="text"
             className="w-full bg-white rounded-lg h-12 placeholder:text-[#18181B] focus:outline-[#084116] focus:border-[#084116] pl-2 md:pl-4 font-light placeholder:text-sm"
