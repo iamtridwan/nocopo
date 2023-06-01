@@ -1,6 +1,6 @@
 // import React from "react";
 // import { Data } from "../utils/Data";
-import "./styles/chart.css";
+// import "./styles/chart.css";
 
 
 const Stats = () => {
