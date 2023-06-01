@@ -1,32 +1,35 @@
 // import React from "react";
-// import { Data } from "../utils/Data";
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+import { Pie, Bar } from "react-chartjs-2";
 // import "./styles/chart.css";
+
+ChartJS.register(ArcElement, Tooltip, Legend);
 
 
 const Stats = () => {
-//   const data = {
-//     labels: [
-//       "Procurement category",
-//       "Procurement category",
-//       "Procurement category",
-//       "Procurement category",
-//     ],
-//     // datasets is an array of objects where each object represents a set of data to display corresponding to the labels above. for brevity, we'll keep it at one object
-//     datasets: [
-//       {
-//         label: "All Contract Groups By Procurement Category",
-//         data: [55, 23, 96, 30],
-//         // you can set indiviual colors for each bar
-//         backgroundColor: [
-//           "rgba(93, 95, 239, 1)",
-//           "rgba(4, 57, 89, 1)",
-//           "rgba(239, 93, 168, 1)",
-//           "rgba(189, 134, 0, 1)",
-//         ],
-//         borderWidth: 1,
-//       },
-//     ],
-//   };
+  const data = {
+    labels: [
+      "Procurement category",
+      "Procurement category",
+      "Procurement category",
+      "Procurement category",
+    ],
+    // datasets is an array of objects where each object represents a set of data to display corresponding to the labels above. for brevity, we'll keep it at one object
+    datasets: [
+      {
+        label: "All Contract Groups By Procurement Category",
+        data: [55, 23, 96, 30],
+        // you can set indiviual colors for each bar
+        backgroundColor: [
+          "rgba(93, 95, 239, 1)",
+          "rgba(4, 57, 89, 1)",
+          "rgba(239, 93, 168, 1)",
+          "rgba(189, 134, 0, 1)",
+        ],
+        borderWidth: 1,
+      },
+    ],
+  };
 //   const secData = {
 //     labels: [
 //       "Procurement category",
@@ -71,21 +74,21 @@ const Stats = () => {
       <h1 className="text-xl md:text-2xl font-semibold w-64 md:w-96 text-[#03012C] mb-4">
         All Projects And Fund Allocation
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-10 mt-8">
+      <div className="flex items-center justify-center flex-col md:grid md:grid-cols-2 gap-4 md:gap-10 mt-8">
         <div
           className="bg-white rounded-xl flex items-center justify-center py-4 md:py-10"
           style={boxStyles}
         >
-
+          <Pie data={data} />
         </div>
         <div
           className="bg-white rounded-xl flex items-center justify-center py-4 md:py-10"
           style={boxStyles}
         >
-         
+         <Pie data={data} />
         </div>
         <div
-          className="col-span-2 mt-4 bg-white rounded-xl flex items-center justify-between flex-col md:flex-row py-4 md:py-10 px-4 md:px-8 z-20 h-[50vh] -mb-52 md:-mb-0"
+          className="md:col-span-2 mt-4 bg-white rounded-xl flex items-center justify-between flex-col md:flex-row py-4 md:py-10 px-4 md:px-8 z-20 h-[50vh] -mb-52 md:-mb-0"
           style={boxStyles}
         >
           <aside className="w-64 md:mr-10">
