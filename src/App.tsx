@@ -6,7 +6,7 @@ import Stats from "./components/Stats";
 
 function App() {
   return (
-    <div className="bg-[#F8F9FA] relative pb-10">
+    <div className="bg-[#F8F9FA] relative pb-10 w-[full] overflow-x-hidden">
       <header className="px-6 md:px-16 pt-24 mb-10">
         <Navigation />
         <Header />
