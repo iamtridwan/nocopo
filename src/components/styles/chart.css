@@ -5,3 +5,15 @@
     align-items: center !important;
     justify-content: space-between !important;
 };
+
+.bar canvas {
+    width:300px !important;
+    height: 500px !important;
+}
+
+@media screen and (min-width:768px) {
+    .bar canvas {
+        width:initial;
+        height: 300px !important;
+    }
+}
