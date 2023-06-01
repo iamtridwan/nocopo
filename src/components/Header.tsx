@@ -1,9 +1,16 @@
 import "../components/styles/headerstyle.css";
+import { motion } from "framer-motion";
 const Header = () => {
+  
   return (
     <div className="header flex items-center justify-center w-full md:h-[80vh] rounded-xl md:rounded-3xl">
-      <div className="w-full md:w-[50%] pt-4 md:pt-0 pb-12 md:pb-0 px-6 md:px-0">
-        <h1 className="text-white font-sans font-bold text-[1.8rem] md:text-3xl text-center">
+      <motion.div 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className="w-full md:w-[50%] pt-4 md:pt-0 pb-12 md:pb-0 px-6 md:px-0">
+        <h1
+          className="text-white font-sans font-bold text-[1.8rem] md:text-3xl text-center"
+        >
           Welcome To The Official Nigeria
           <br />
           Open Contracting Portal (NOCOPO)
@@ -24,7 +31,7 @@ const Header = () => {
         <p className="text-white text-center text-xs md:text-base font-light mb-16 md:mb-0">
           **Search for any project data**
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 };

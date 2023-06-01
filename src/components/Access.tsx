@@ -1,4 +1,6 @@
 // import React from 'react'
+import light from "../assets/light.png";
+import dark from "../assets/dark.png";
 import "../components/styles/access.css";
 // import bg from "../assets/sectionBg.svg";
 
@@ -33,6 +35,10 @@ const Access = () => {
   return (
     // <section className=" w-full relative min-h-[500px] md:min-h-[200px] pb-20 -mt-20">
     <section className="access-bg md:bg-[#084116] w-full relative py-48 md:pt-8 md:pb-36">
+      <div className="hidden md:block h-52 w-full overflow-hidden relative -mt-52">
+        <img src={dark} alt="light background" className="object-fill mb-8" />
+        <img src={light} alt="dark background" className="absolute -top-6 right-0 object-cover" />
+      </div>
       {/* <img src={bg} alt="decorative background" className="object-fill md:object-cover min-h-full" /> */}
       {/* <div className="absolute top-10 md:top-60 left-0 w-full"> */}
       <div className="w-full">
