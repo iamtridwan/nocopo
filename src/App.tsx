@@ -1,8 +1,8 @@
-import Access from "./components/Access";
-import Footer from "./components/Footer";
+// import Access from "./components/Access";
+// import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navigation from "./components/Navigation";
-import Stats from "./components/Stats";
+// import Stats from "./components/Stats";
 
 function App() {
   return (
@@ -228,9 +228,9 @@ function App() {
           </div>
         </div>
       </header>
-      <Stats />
+      {/* <Stats />
       <Access />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
