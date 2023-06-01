@@ -5,8 +5,9 @@ const Header = () => {
   return (
     <div className="header flex items-center justify-center w-full md:h-[80vh] rounded-xl md:rounded-3xl">
       <motion.div 
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      initial={{ y: 200, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{duration: 1.5}}
       className="w-full md:w-[50%] pt-4 md:pt-0 pb-12 md:pb-0 px-6 md:px-0">
         <h1
           className="text-white font-sans font-bold text-[1.8rem] md:text-3xl text-center"

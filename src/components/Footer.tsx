@@ -1,11 +1,15 @@
 // import React from 'react'
+import {motion} from "framer-motion";
 import nigeria from "../assets/nigeria.svg";
 import bereau from "../assets/bereau.svg";
 import nocopo from "../assets/NOCOPO3.svg";
 
 const Footer = () => {
   return (
-    <div
+    <motion.div
+    initial={{scale:0.2, opacity: 0}}
+    whileInView={{scale:1, opacity: 1}}
+    transition={{duration: 0.4, delay:0.2}}
       className="bg-white relative rounded-xl w-[80%] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-3 p-4 z-10 -mt-36 md:-mt-20"
       style={boxStyle}
     >
@@ -45,7 +49,7 @@ const Footer = () => {
           Transparency|Efficiency
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

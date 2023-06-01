@@ -1,6 +1,7 @@
 // import React from 'react'
 import light from "../assets/light.png";
 import dark from "../assets/dark.png";
+import {motion } from "framer-motion";
 import "../components/styles/access.css";
 // import bg from "../assets/sectionBg.svg";
 
@@ -52,19 +53,29 @@ const Access = () => {
             platform
           </p>
         </div>
-        <h2 className="absolute right-2 md:right-0 top-52 md:top-6 bg-white rounded-md py-2 md:py-3 px-1 md:px-4 text-[#084116] font-semibold text-[12px] md:text-sm">
+        <motion.h2 
+        initial={{opacity: 0}}
+        whileInView={{opacity: 1}}
+        transition={{duration:0.3, delay:0.4}}
+        className="absolute right-2 md:right-0 top-52 md:top-6 bg-white rounded-md py-2 md:py-3 px-1 md:px-4 text-[#084116] font-semibold text-[12px] md:text-sm">
           Total Number of visit: <span className="font-normal">234, 345 visitors</span>
-        </h2>
+        </motion.h2>
       <div className="mt-24 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12 w-[80%] md:w-[85%] mx-auto">
         {
             accessData.map((data, idx) => (
-                <div className="flex items-center justify-center flex-col border-2 border-dashed border-white p-8" key={idx+1}>
+                <motion.div 
+                className="flex items-center justify-center flex-col border-2 border-dashed border-white p-8" 
+                key={idx+1}
+                initial={{opacity: 0, translateX: idx % 2 === 0 ? -50 : 50, translateY: -50}}
+                whileInView={{ opacity: 1, translateX: 0, translateY: 0}}
+                transition={{duration: 0.3, delay: idx * 0.3}}
+                >
                     <h1 className="text-white font-bold text-2xl mb-6">{data.title}</h1>
                     <p className="text-normal font-light text-center mb-6 text-white">
                         {data.content}
                     </p>
                     <button className="font-medium text-[#BD8600] md:text-lg border-none outline-none">Proceed {`>`}{`>`}</button>
-                </div>
+                </motion.div>
 
             ))
         }

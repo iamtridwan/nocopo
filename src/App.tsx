@@ -15,7 +15,7 @@ function App() {
       animate: (custom: number) => ({
         y: 0,
         opacity: 1,
-        transition: { delay: custom * 0.1, duration: 0.2 },
+        transition: { delay: custom * 0.2, duration: 0.3 },
       }),
       exit: { y: -100, opacity: 0 },
     },
@@ -30,7 +30,7 @@ function App() {
             className="mx-auto rounded-xl w-[95%] lg:w-[80%] -mt-12 bg-white py-3 px-2 md:py-10 md:px-8 flex items-center justify-between"
             style={boxStyle}
           >
-            <motion.div className="flex items-center" {...animationVariants}>
+            <motion.div className="flex items-center" {...animationVariants} custom={0}>
               <div className="flex items-center justify-center flex-col md:flex-row md:mr-2 lg:mr-5">
                 <h1 className="text-[#03012C] text-sm md:text-2xl font-semibold md:mr-2 lg:mr-3">
                   2943
@@ -83,7 +83,7 @@ function App() {
                 />
               </svg>
             </motion.div>
-            <motion.div className="flex items-center" {...animationVariants}>
+            <motion.div className="flex items-center" {...animationVariants} custom={1}>
               <div className="items-center justify-center flex-col md:flex-row flex md:mr-2 lg:mr-5">
                 <h1 className="text-[#03012C] text-sm md:text-2xl font-semibold md:mr-2 lg:mr-3">
                   345
@@ -136,7 +136,7 @@ function App() {
                 />
               </svg>
             </motion.div>
-            <motion.div className="flex items-center" {...animationVariants}>
+            <motion.div className="flex items-center" {...animationVariants} custom={2}>
               <div className="flex items-center justify-center flex-col md:flex-row md:mr-2 lg:mr-5">
                 <h1 className="text-[#03012C] text-sm md:text-2xl font-semibold md:mr-2 lg:mr-3">
                   #1M+
@@ -189,7 +189,7 @@ function App() {
                 />
               </svg>
             </motion.div>
-            <motion.div className="flex items-center" {...animationVariants}>
+            <motion.div className="flex items-center" {...animationVariants} custom={3}>
               <div className="items-center justify-center flex-col md:flex-row flex md:mr-2 lg:mr-5">
                 <h1 className="text-[#03012C] text-sm md:text-2xl font-semibold md:mr-2 lg:mr-3">
                   2943
