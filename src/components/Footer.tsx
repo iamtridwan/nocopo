@@ -5,7 +5,7 @@ import nocopo from "../assets/NOCOPO3.svg";
 
 const Footer = () => {
   return (
-    <footer
+    <div
       className="bg-white relative rounded-xl w-[80%] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-3 p-4 z-10 -mt-36 md:-mt-20"
       style={boxStyle}
     >
@@ -45,7 +45,7 @@ const Footer = () => {
           Transparency|Efficiency
         </p>
       </div>
-    </footer>
+    </div>
   );
 };
 
