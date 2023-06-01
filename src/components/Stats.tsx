@@ -67,7 +67,7 @@ const Stats = () => {
 //   }
 
   return (
-    <section className="w-full px-6 md:px-16 mb-8">
+    <section className="w-full px-6 md:px-16 mb-8 ">
       <h1 className="text-xl md:text-2xl font-semibold w-64 md:w-96 text-[#03012C] mb-4">
         All Projects And Fund Allocation
       </h1>
@@ -85,7 +85,7 @@ const Stats = () => {
          
         </div>
         <div
-          className="col-span-2 mt-4 bg-white rounded-xl flex items-center justify-between flex-col md:flex-row py-4 md:py-10 px-4 md:px-8"
+          className="col-span-2 mt-4 bg-white rounded-xl flex items-center justify-between flex-col md:flex-row py-4 md:py-10 px-4 md:px-8 z-20 h-[50vh] -mb-52 md:-mb-0"
           style={boxStyles}
         >
           <aside className="w-64 md:mr-10">

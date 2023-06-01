@@ -1,10 +1,12 @@
+import Access from "./components/Access";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navigation from "./components/Navigation";
 import Stats from "./components/Stats";
 
 function App() {
   return (
-    <div className="bg-[#F8F9FA]">
+    <div className="bg-[#F8F9FA] relative pb-10">
       <header className="px-6 md:px-16 pt-24 mb-10">
         <Navigation />
         <Header />
@@ -227,6 +229,8 @@ function App() {
         </div>
       </header>
       <Stats />
+      <Access />
+      <Footer />
     </div>
   );
 }

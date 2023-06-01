@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Navigation = () => {
   const [showNav, setShowNav] = useState(false);
   return (
-    <div className="px-6 md:px-16 fixed top-0 left-0  w-full bg-[#F8F9FA] px py-6 flex items-center justify-between shadow-b-sm">
+    <div className="px-6 md:px-16 fixed top-0 left-0  w-full bg-[#F8F9FA] px py-6 flex items-center justify-between shadow-b-sm z-50">
       <p>NOCOPO</p>
       <nav className="flex items-center justify-between w-[60%]">
         <ul className="hidden md:flex items-center justify-between font-light w-full">
