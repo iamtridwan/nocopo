@@ -1,5 +1,5 @@
 // import React from 'react'
-import "../components/styles/headerstyle.css";
+import "../components/styles/access.css";
 // import bg from "../assets/sectionBg.svg";
 
 const Access = () => {
@@ -32,7 +32,7 @@ const Access = () => {
     ]
   return (
     // <section className=" w-full relative min-h-[500px] md:min-h-[200px] pb-20 -mt-20">
-    <section className=" md:bg-[#084116] access-bg w-full relative py-48 md:pt-8 md:pb-36">
+    <section className="access-bg md:bg-[#084116] w-full relative py-48 md:pt-8 md:pb-36">
       {/* <img src={bg} alt="decorative background" className="object-fill md:object-cover min-h-full" /> */}
       {/* <div className="absolute top-10 md:top-60 left-0 w-full"> */}
       <div className="w-full">
@@ -57,7 +57,7 @@ const Access = () => {
                     <p className="text-normal font-light text-center mb-6 text-white">
                         {data.content}
                     </p>
-                    <button className="font-medium text-[#BD8600] md:text-lg">Proceed {`>`}{`>`}</button>
+                    <button className="font-medium text-[#BD8600] md:text-lg border-none outline-none">Proceed {`>`}{`>`}</button>
                 </div>
 
             ))
