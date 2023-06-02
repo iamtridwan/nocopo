@@ -7,8 +7,10 @@
 
 @media screen and (min-width:768px) {
     .header {
+        background-color: "#084116";
+        background-origin: border-box;
         background-image: url(../../assets/headerBg.png);
-        background-size: cover;
+        background-size: 98%;
     }
 
     .access-bg {
