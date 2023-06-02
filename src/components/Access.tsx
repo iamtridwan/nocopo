@@ -42,7 +42,7 @@ const Access = () => {
       </div>
       {/* <img src={bg} alt="decorative background" className="object-fill md:object-cover min-h-full" /> */}
       {/* <div className="absolute top-10 md:top-60 left-0 w-full"> */}
-      <div className="w-full">
+      <div className="w-full relative">
         <div className="hidden md:block mx-auto w-[50%] mt-6">
           <h1 className="text-white md:text-3xl font-sans text-center font-semibold mb-3 md:mb-6">
             View And Analyse Data
@@ -55,9 +55,9 @@ const Access = () => {
         </div>
         <motion.h2 
         initial={{opacity: 0}}
-        whileInView={{opacity: 1}}
+        animate={{opacity: 1}}
         transition={{duration:0.3, delay:0.4}}
-        className="absolute right-2 md:right-0 top-52 md:top-6 bg-white rounded-md py-2 md:py-3 px-1 md:px-4 text-[#084116] font-semibold text-[12px] md:text-sm">
+        className="fixed right-2 md:right-0 bottom-2 bg-white rounded-md py-2 md:py-3 px-1 md:px-4 text-[#084116] font-semibold text-[12px] md:text-sm z-30">
           Total Number of visit: <span className="font-normal">234, 345 visitors</span>
         </motion.h2>
       <div className="mt-24 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12 w-[80%] md:w-[85%] mx-auto">
